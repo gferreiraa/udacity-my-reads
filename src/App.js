@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Button from "@material-ui/core/Button";
+import Navbar from "../src/componentes/NavBar";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <Navbar/>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
