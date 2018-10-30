@@ -1,6 +1,7 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   background-color: #282c34;
+  height: 100vh;
 }
 
 .App-header {
@@ -16,10 +17,6 @@
 
 .App-link {
   color: #61dafb;
-}
-
-.bookshelf-title{
-  color: #fff;
 }
 
 @keyframes App-logo-spin {

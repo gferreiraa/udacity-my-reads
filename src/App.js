@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Button from "@material-ui/core/Button";
 import Navbar from "../src/componentes/NavBar";
@@ -10,8 +9,8 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar align="center"/>
-          <Shelf/>
-          <Button variant="contained" color="primary">Hello World</Button>
+        <Shelf/>
+        <Button variant="contained" color="primary">Hello World</Button>
       </div>
     );
   }
