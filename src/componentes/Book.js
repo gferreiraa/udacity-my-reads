@@ -1,15 +1,45 @@
-import React, { Component } from 'react'
-import Titles from './StyleComponents'
+import React, { Component } from 'react';
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+import OutlinedInput from '@material-ui/core/OutlinedInput';
 export default class Shelf extends Component {
     render() {
         return(
-            <div className="bookshelf">
-                <div className="bookshelf-books">
-                    <ol>
-                        <Book/>
-                    </ol>
+            <li>
+                <div className="book">
+                    <div className="book-top">
+                        <div className="book-cover" style={{ width: 128, height: 193, backgroundImage: 'url("http://books.google.com/books/content?id=PGR2AwAAQBAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE73-GnPVEyb7MOCxDzOYF1PTQRuf6nCss9LMNOSWBpxBrz8Pm2_mFtWMMg_Y1dx92HT7cUoQBeSWjs3oEztBVhUeDFQX6-tWlWz1-feexS0mlJPjotcwFqAg6hBYDXuK_bkyHD-y&source=gbs_api")' }}></div>
+                        <div className="book-shelf-changer">
+
+                        <select>
+                            <option value="move" disabled>Move to...</option>
+                            <option value="currentlyReading">Currently Reading</option>
+                            <option value="wantToRead">Want to Read</option>
+                            <option value="read">Read</option>
+                            <option value="none">None</option>
+                        </select>
+
+                        <Select 
+                        input={
+                            <OutlinedInput
+                            />
+                          }>
+                        <MenuItem value="">
+                          <em>None</em>
+                        </MenuItem>
+                        <MenuItem value={10}>Ten</MenuItem>
+                        <MenuItem value={20}>Twenty</MenuItem>
+                        <MenuItem value={30}>Thirty</MenuItem>
+                      </Select>
+
+
+
+                        </div>
+                    </div>
+                        <div className="book-title">To Kill a Mockingbird</div>
+                    <div className="book-authors">Harper Lee</div>
                 </div>
-            </div>
+            </li>
         )
     }
 }

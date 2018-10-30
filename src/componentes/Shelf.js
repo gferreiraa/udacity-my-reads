@@ -1,22 +1,17 @@
 import React, { Component } from 'react'
-import Titles from './StyleComponents'
 
-import Grid from '@material-ui/core/Grid';
+import Book from './Book'
+import Titles from './StyleComponents'
 export default class Shelf extends Component {
     render() {
         return(
             <div className="bookshelf">
-            <Grid container>
-                <Grid item lg={12}>
-                <Titles>Lendo Atualmente:</Titles>
-                <div className="bookshelf-books">
-                  <ol className="books-grid">
-    
-                  </ol>
-                </div>
-                </Grid>
-            </Grid>
-
+            <Titles>Lendo Atualmente:</Titles>
+            <div className="bookshelf-books">
+              <ol className="books-grid">
+                <Book></Book>
+              </ol>
+            </div>
           </div>
         )
     }
