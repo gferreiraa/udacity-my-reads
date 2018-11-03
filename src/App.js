@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
-import Button from "@material-ui/core/Button";
 import Navbar from "../src/componentes/NavBar";
 import Shelf from './componentes/Shelf';
+import Footer from './componentes/Footer';
+import FAB from './componentes/FAB';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar align="center"/>
+        <Navbar/>
         <Shelf/>
-        <Button variant="contained" color="primary">Hello World</Button>
+        <FAB/>
+        <Footer/>
       </div>
     );
   }

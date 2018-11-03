@@ -1,18 +1,17 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
+import Book from './Book'   
 
-import Book from './Book'
-import Titles from './StyleComponents'
 export default class Shelf extends Component {
     render() {
-        return(
+        return (
             <div className="bookshelf">
-            <Titles>Lendo Atualmente:</Titles>
-            <div className="bookshelf-books">
-              <ol className="books-grid">
-                <Book></Book>
-              </ol>
+                <h2 className="title is-4">Currently Reading</h2>
+                <div className="container">
+                    <ol className="level">
+                        <Book/>
+                    </ol>
+                </div>
             </div>
-          </div>
         )
     }
 }

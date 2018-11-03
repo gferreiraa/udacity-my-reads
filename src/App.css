@@ -1,29 +1,59 @@
+@import '../node_modules/bulma/css/bulma.css';
+
 .App {
   /* text-align: center; */
-  background-color: #282c34;
+  /* background-color: #282c34; */
   height: 100vh;
 }
+.bookshelf{
+  padding: 28px;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .navbar--customize{
+  box-shadow: 0 1rem 1rem -1rem rgba(10,10,10,.2);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ }
+
+ /*Footer*/
+ .footer__link{
+  color:#4a4a4a; 
+  text-decoration:none; 
+  cursor:pointer; 
+ }
+.heart__icon{
+  color: #bd1550;
 }
 
-.App-link {
-  color: #61dafb;
-}
+ol li{
+ list-style:none;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ .card__top{
+   padding-top: 20px;
+   padding-bottom: 20px;
+   border-radius: 20px;
+ }
+
+ .select:not(.is-multiple):not(.is-loading)::after{
+  border-color: #c21e58;
+ }
+
+ .open-search {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+.open-search a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e97f02;
+  background-image: url('./icons/add.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-size: 0;
 }
