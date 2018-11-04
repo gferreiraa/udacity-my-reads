@@ -21,7 +21,7 @@ npm start
 ```
 Desta forma o servidor será inicializado e o browser irá inicializar automaticamente.
 
-## Recursos de documental adicional
+## Documentação adicional
 - [Create-react-app Documentation](https://github.com/facebookincubator/create-react-app)
 - [React Router Documentation](http://knowbody.github.io/react-router-docs/)
 - [React Training/React Router](https://reacttraining.com/react-router/web/api/BrowserRouter)
