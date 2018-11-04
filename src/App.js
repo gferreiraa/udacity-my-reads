@@ -1,21 +1,34 @@
-import React, { Component } from 'react';
-import './App.css';
-import Navbar from "../src/componentes/NavBar";
-import Shelf from './componentes/Shelf';
-import Footer from './componentes/Footer';
-import FAB from './componentes/FAB';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-class App extends Component {
+import Home from './views/Home';
+import Search from './views/Search';
+import Provider, { MyContext } from '../src/provider/index'
+
+import './App.css';
+
+class BooksApp extends React.Component {
   render() {
     return (
       <div className="App">
-        <Navbar/>
-        <Shelf/>
-        <FAB/>
-        <Footer/>
+      <Provider>
+        <Switch>
+          <Route exact path={"/"} render={() => (
+            <MyContext.Consumer>
+              {context => <Home {...context} />}
+            </MyContext.Consumer>
+          )}/>}
+          <Route exact path={"/search"} render={() => (
+            <MyContext.Consumer>
+              {context => <Search {...context} />}
+            </MyContext.Consumer>
+          )}/>}
+        </Switch>
+      </Provider>
+
+
       </div>
     );
   }
 }
-
-export default App;
+export default BooksApp
