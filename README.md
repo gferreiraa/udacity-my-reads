@@ -1,4 +1,4 @@
-#Projeto MyReads: uma aplicação de registro de livros
+# Projeto MyReads: uma aplicação de registro de livros
 
 Primeiro projeto do Nanodegree Desenvolvedor React - Udacity. Este projeto tem como objetivo apresentar a estrutura básica e operacional de uma aplicação com React.
 
@@ -21,7 +21,7 @@ npm start
 ```
 Desta forma o servidor será inicializado e o browser irá inicializar automaticamente.
 
-##Recursos de documental adicional
+## Recursos de documental adicional
 - [Create-react-app Documentation](https://github.com/facebookincubator/create-react-app)
 - [React Router Documentation](http://knowbody.github.io/react-router-docs/)
 - [React Training/React Router](https://reacttraining.com/react-router/web/api/BrowserRouter)
@@ -30,7 +30,7 @@ Desta forma o servidor será inicializado e o browser irá inicializar automatic
 
 
 
-##Termos de pesquisa
+## Termos de pesquisa
 
 Para realizar pesquisas na aplicação você pode utilizar os seguintes termos:
 
