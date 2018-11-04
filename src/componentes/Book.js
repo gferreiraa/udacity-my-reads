@@ -22,7 +22,7 @@ export default class Shelf extends Component {
                             width: 128,
                             height: 193,
                             margin: 'auto',
-                            backgroundImage: `url(${this.props.imageLinks.thumbnail})`
+                            backgroundImage: `url(${this.props.imageLinks ? this.props.imageLinks.thumbnail : ""})`
                         }}>
                         </div>
                         <div className="card-content">
@@ -39,7 +39,7 @@ export default class Shelf extends Component {
                             </div>
                             </div>
                             <div className="title is-6">{this.props.title}</div><br/>    
-                            <div className="tag is-warning">{this.props.authors}</div>
+                            <div className="tag is-warning">{this.props.authors ? this.props.authors[0] : "No Authors!"}</div>
                     </div>
                 </div>
             </li>
