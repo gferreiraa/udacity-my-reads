@@ -2,9 +2,9 @@
 
 Primeiro projeto do Nanodegree Desenvolvedor React - Udacity. Este projeto tem como objetivo apresentar a estrutura básica e operacional de uma aplicação com React.
 
-##Iniciando a aplicação
+## Iniciando a aplicação
 
-Você pode verificar uma versão hospedada aqui em: [MyReads]()
+Você pode verificar uma versão hospedada aqui em: [MyReads](https://stoic-lumiere-07fc84.netlify.com/)
 
 Este projeto utiliza o Node.js e o Create-React-App. Para iniciar esta aplicação você precisa inicialmente do Node instalado na versão 6.0 ou superior. Caso necessite, você pode fazer o download do Node aqui: [Node.js](https://nodejs.org/en/)
 
