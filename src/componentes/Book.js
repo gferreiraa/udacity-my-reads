@@ -13,15 +13,14 @@ export default class Shelf extends Component {
     }
     render() {
         return (
-            <li className="level-item has-text-centered">
+            <li className="has-text-centered column">
                 <div className="book">
-                    <div className="card card__top">
+                    <div className="card__top">
                         <div
-                            className="card-image"
+                            className="book-cover"
                             style={{
                             width: 128,
                             height: 193,
-                            margin: 'auto',
                             backgroundImage: `url(${this.props.imageLinks ? this.props.imageLinks.thumbnail : ""})`
                         }}>
                         </div>
@@ -38,8 +37,8 @@ export default class Shelf extends Component {
                                 </div>
                             </div>
                             </div>
-                            <div className="title is-6">{this.props.title}</div><br/>    
-                            <div className="tag is-warning">{this.props.authors ? this.props.authors[0] : "No Authors!"}</div>
+                            <div className="title is-6 book-title">{this.props.title}</div><br/>    
+                            <div className="tag is-warning book-authors">{this.props.authors ? this.props.authors[0] : "No Authors!"}</div>
                     </div>
                 </div>
             </li>

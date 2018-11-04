@@ -8,7 +8,7 @@ export default class Shelf extends Component {
                 <h2 className="title is-4">{ this.props.title }</h2>
                 <hr/>
                 <div className="container">
-                    <ol className="level">
+                    <ol className="columns is-desktop">
                         {this.props.books && this.props.books.map(book => <Book key={book.id} {...book} moveBook={this.props.moveBook}/>)}
                     </ol>
                 </div>
